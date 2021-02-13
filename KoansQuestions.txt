@@ -1,4 +1,5 @@
 +question 1
+skąd się bierze inkrementacja IDków, jaki to wzorzec ich inkrementowania?
 def test_small_integers_have_fixed_ids
     assert_equal 1, 0.object_id
     assert_equal 3, 1.object_id
@@ -12,3 +13,28 @@ def test_small_integers_have_fixed_ids
 dlaczego jest różnica między dwoma a trzema kropkami?
 assert_equal [1,2,3,4,5], (1..5).to_a
 assert_equal [1,2,3,4], (1...5).to_a
+
++question 3
+co to są hashe w ruby?
+
++question 4
+poznać działanie metody .fetch
+
++question 5
+dlaczego stosuje się dwókropek przed kluczem?
+hash1 = Hash.new
+hash1[:one] = 1
+    
+    
++question 6
+dlaczego istnieje wartość dla klucza :three?
+czy to dlatego że inicjalizacja poprzez new([])
+powoduje, ze ten sam obiekt jest pod każdym kluczem?
+hash = Hash.new([])
+
+    hash[:one] << "uno"
+    hash[:two] << "dos"
+    
+    assert_equal ["uno", "dos"], hash[:one]
+    assert_equal ["uno", "dos"], hash[:two]
+    assert_equal ["uno", "dos"], hash[:three]

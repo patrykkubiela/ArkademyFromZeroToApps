@@ -38,3 +38,6 @@ hash = Hash.new([])
     assert_equal ["uno", "dos"], hash[:one]
     assert_equal ["uno", "dos"], hash[:two]
     assert_equal ["uno", "dos"], hash[:three]
+    
++question 7
+co to są typy Symbol
